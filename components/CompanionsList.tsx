@@ -15,15 +15,15 @@ interface CompanionListProps {
     companions?: Companion[];
     classNames?: string;
 }
-const CompanionList = ({title, companions, classNames}: CompanionListProps) => {
+const CompanionsList = ({title, companions, classNames}: CompanionListProps) => {
     return (
         <article className={cn('companion-list', classNames)} >
-            <h2 className="font-bold text-3xl">Recent Sessions</h2>
+            <h2 className="font-bold text-3xl">{title}</h2>
 
             <Table>
                 <TableHeader>
                     <TableRow>
-                        <TableHead className="text-lg w-2/3">Lession</TableHead>
+                        <TableHead className="text-lg w-2/3">Lessons</TableHead>
                         <TableHead className="text-lg">Subject</TableHead>
                         <TableHead className="text-lg text-right">Duration</TableHead>
                     </TableRow>
@@ -86,4 +86,4 @@ const CompanionList = ({title, companions, classNames}: CompanionListProps) => {
         </article>
     )
 }
-export default CompanionList
+export default CompanionsList
