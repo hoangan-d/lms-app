@@ -1,6 +1,4 @@
-import React from 'react'
 import CompanionForm from "@/components/CompanionForm";
-import {useSession} from "@clerk/nextjs";
 import {auth} from "@clerk/nextjs/server";
 import {redirect} from "next/navigation";
 import {newCompanionPermission} from "@/lib/actions/companion.actions";
